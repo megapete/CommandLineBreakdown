@@ -7,11 +7,26 @@
 
 import Cocoa
 
+extension NSTextField {
+    
+    func DuplicateLabelWithOffset(dx:CGFloat, dy:CGFloat) -> NSTextField
+    {
+        let newField = NSTextField(labelWithString: self.stringValue)
+        newField.frame = self.frame.offsetBy(dx: dx, dy: dy)
+        newField.font = self.font
+        
+        return newField
+    }
+}
+
 class AppController: NSObject {
     
     var cmdLineComponents:[String] = []
     
     @IBOutlet weak var cmdLineField: NSTextField!
+    
+    @IBOutlet weak var commandNameField: NSTextField!
+    @IBOutlet weak var argFlagField: NSTextField!
     
     @IBAction func handlePasteNewCmdLine(_ sender: Any) {
         
@@ -27,7 +42,7 @@ class AppController: NSObject {
             return
         }
         
-        print("\(items.count) items on the clipboard")
+        // print("\(items.count) items on the clipboard")
         
         guard let cmdLine = items[0].string(forType: .string) else
         {
@@ -41,5 +56,16 @@ class AppController: NSObject {
         self.cmdLineComponents = cmdLine.components(separatedBy: .whitespaces).filter({ $0 != ""})
         
         let commLine = CommandLine(cmdLineComponents: self.cmdLineComponents)
+        
+        print("Number of arguments: \(commLine.arguments.count); Number of flags: \(commLine.flags.count)")
+        
+        self.commandNameField.stringValue = commLine.name
+        
+        
+        
+        for nextArg in commLine.arguments
+        {
+            
+        }
     }
 }
