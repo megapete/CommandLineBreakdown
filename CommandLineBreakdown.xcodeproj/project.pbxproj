@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D307C13425FE5A77006DD1E8 /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307C13325FE5A77006DD1E8 /* CommandLine.swift */; };
 		D3E1226625FE38660014C5EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E1226525FE38660014C5EA /* AppDelegate.swift */; };
 		D3E1226825FE38660014C5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E1226725FE38660014C5EA /* Assets.xcassets */; };
 		D3E1226B25FE38660014C5EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E1226925FE38660014C5EA /* MainMenu.xib */; };
+		D3E1227525FE390F0014C5EA /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E1227425FE390F0014C5EA /* AppController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D307C13325FE5A77006DD1E8 /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
 		D3E1226225FE38660014C5EA /* CommandLineBreakdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandLineBreakdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E1226525FE38660014C5EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E1226725FE38660014C5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3E1226A25FE38660014C5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D3E1226C25FE38660014C5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3E1226D25FE38660014C5EA /* CommandLineBreakdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommandLineBreakdown.entitlements; sourceTree = "<group>"; };
+		D3E1227425FE390F0014C5EA /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				D3E1226525FE38660014C5EA /* AppDelegate.swift */,
+				D3E1227425FE390F0014C5EA /* AppController.swift */,
+				D307C13325FE5A77006DD1E8 /* CommandLine.swift */,
 				D3E1226725FE38660014C5EA /* Assets.xcassets */,
 				D3E1226925FE38660014C5EA /* MainMenu.xib */,
 				D3E1226C25FE38660014C5EA /* Info.plist */,
@@ -129,7 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D307C13425FE5A77006DD1E8 /* CommandLine.swift in Sources */,
 				D3E1226625FE38660014C5EA /* AppDelegate.swift in Sources */,
+				D3E1227525FE390F0014C5EA /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
